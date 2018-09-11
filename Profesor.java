@@ -18,6 +18,11 @@ public class Profesor extends Persona {
 	@Required
 	@NotNull
 	private String materia;
+	
+	@Column(length=3)
+	@Required
+	@NotNull
+	private String edad;
 
 	public String getMateria() {
 		return materia;
@@ -47,6 +52,14 @@ public class Profesor extends Persona {
 	
 	public void settaller(Collection <taller> taller){
 		this.taller=taller;
+	}
+
+	public String getEdad() {
+		return edad;
+	}
+
+	public void setEdad(String edad) {
+		this.edad = edad;
 	}
 	
 	
