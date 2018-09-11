@@ -31,6 +31,7 @@ public class Alumno extends Persona {
 	@Column(length=3)
 	@Required
 	@NotNull
+	@Past
 	private String edad;
 
 	public String getCurso() {
