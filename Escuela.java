@@ -18,6 +18,11 @@ public class Escuela {
 	@NotEmpty
 	private int numero;
 	
+	@Column (length=10)
+	@Required
+	@NotEmpty
+	private String tipo;
+	
 	@Column (length=20)
 	@Required
 	@NotEmpty
@@ -37,6 +42,11 @@ public class Escuela {
 	@Required
 	@NotEmpty
 	private String director;
+	
+	@Column (length=20)
+	@Required
+	@NotEmpty
+	private String barrio;
 
 	public String getNombre() {
 		return nombre;
