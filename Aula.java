@@ -32,6 +32,11 @@ public class Aula {
 	@Required
 	@NotNull
 	private String tipo;
+	
+	@Column(length=2)
+	@Required
+	@NotNull
+	private int capacidad ;
 
 	public String getCurso() {
 		return curso;
