@@ -27,6 +27,11 @@ public class Alumno extends Persona {
 	@Required
 	@NotNull
 	private String turno;
+	
+	@Column(length=3)
+	@Required
+	@NotNull
+	private String edad;
 
 	public String getCurso() {
 		return curso;
@@ -83,6 +88,14 @@ public class Alumno extends Persona {
 	
 	public void seteducacion_fisica(Collection <Educacion_Fisica> educacion_fisica){
 		this.educacion_fisica=educacion_fisica;
+	}
+
+	public String getEdad() {
+		return edad;
+	}
+
+	public void setEdad(String edad) {
+		this.edad = edad;
 	}
 	
 }
