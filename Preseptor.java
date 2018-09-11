@@ -3,6 +3,7 @@ package org.trabajopractico2.preseptor;
 import java.util.*;
 
 import javax.persistence.*;
+import javax.validation.constraints.*;
 
 import org.hibernate.validator.constraints.*;
 import org.openxava.annotations.*;
@@ -28,6 +29,11 @@ public class Preseptor extends Persona {
 	@Required
 	@NotEmpty
 	private String turno;
+	
+	@Column(length=3)
+	@Required
+	@NotNull
+	private String edad;
 
 	public String getCurso() {
 		return curso;
@@ -62,6 +68,14 @@ public collection <Gestion> getGestion(){
 	
 public void setGestion(Collection <Gestion> gestion){
 	this.gestion=gestion;
+}
+
+public String getEdad() {
+	return edad;
+}
+
+public void setEdad(String edad) {
+	this.edad = edad;
 }
 	
 
