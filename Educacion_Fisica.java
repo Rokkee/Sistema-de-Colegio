@@ -18,6 +18,11 @@ public class Educacion_Fisica {
 	@Required
 	@NotEmpty
 	private String profesor;
+	
+	@Column (length=5)
+	@Required
+	@NotEmpty
+	private String curso;
 
 	public String getTurno() {
 		return turno;
