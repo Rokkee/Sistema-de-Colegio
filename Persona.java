@@ -37,6 +37,11 @@ public class Persona {
 	@Required
 	@Email
 	private String email;
+	
+	@Column (length=10)
+	@Required
+	@NotEmpty
+	private String dni;
 
 	public String getNombre() {
 		return nombre;
